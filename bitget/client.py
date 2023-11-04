@@ -1,8 +1,8 @@
 import requests
 import json
 
-from utils import hash, exceptions
-from utils import consts as c
+from bitget.utils import hash, consts as c
+from bitget.utils import exceptions
 
 
 class Client(object):

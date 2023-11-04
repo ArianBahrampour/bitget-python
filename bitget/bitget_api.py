@@ -1,5 +1,5 @@
 from client import Client
-from utils.consts import GET, POST
+from bitget.utils.consts import GET, POST
 
 
 class BitgetApi(Client):
