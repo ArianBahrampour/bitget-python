@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from bitget.client import Client
 from bitget.utils.consts import GET, POST
 

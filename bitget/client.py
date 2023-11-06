@@ -21,12 +21,10 @@ class Client(object):
         # url
         url = c.API_URL + request_path
 
-        # 获取本地时间
         timestamp = hash.get_timestamp()
 
         # sign & header
         if self.use_server_time:
-            # 获取服务器时间接口
             timestamp = self._get_timestamp()
 
         body = json.dumps(params) if method == c.POST else ""
