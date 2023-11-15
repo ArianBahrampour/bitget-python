@@ -4,7 +4,8 @@ from bitget.utils.consts import GET
 
 class AccountApi(Client):
     def __init__(self, api_key, api_secret_key, passphrase, use_server_time=False, first=False):
-        Client.__init__(self, api_key, api_secret_key, passphrase, use_server_time, first)
+        Client.__init__(self, api_key, api_secret_key,
+                        passphrase, use_server_time, first)
 
     def info(self, params):
         return self._request_with_params(GET, '/api/v2/spot/account/info', params)
@@ -17,3 +18,6 @@ class AccountApi(Client):
 
     def transferRecords(self, params):
         return self._request_with_params(GET, '/api/v2/spot/account/transferRecords', params)
+
+    def symbolInfo(self, params):
+        return self._request_with_params(GET, '/api/v2/spot/public/symbols', params)

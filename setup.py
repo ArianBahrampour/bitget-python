@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 DESCRIPTION = 'This is a lightweight library that works as a connector to Bitget pulic API'
 LONG_DESCRIPTION = 'SDK for bitget exchange supporting rest and websocket API.'
 
@@ -15,7 +15,7 @@ setup(
     packages=find_packages(),
     install_requires=[],
     keywords=['python', 'bitget', 'sdk', 'api', 'wrapper'],
-    classifiers= [
+    classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         'License :: OSI Approved :: MIT License',
